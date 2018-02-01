@@ -12,9 +12,12 @@
 		4FF79B662023039E00CF2E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF79B642023039E00CF2E08 /* Main.storyboard */; };
 		4FF79B682023039E00CF2E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF79B672023039E00CF2E08 /* Assets.xcassets */; };
 		4FF79B6B2023039E00CF2E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF79B692023039E00CF2E08 /* LaunchScreen.storyboard */; };
+		53D6E9C60BCEBC09AB01C750 /* Pods_FlowerPower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A798D293FBC408641CFA89A /* Pods_FlowerPower.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A798D293FBC408641CFA89A /* Pods_FlowerPower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerPower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B15408F8A240C88AED763D5 /* Pods-FlowerPower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerPower.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerPower/Pods-FlowerPower.release.xcconfig"; sourceTree = "<group>"; };
 		4FF79B5D2023039E00CF2E08 /* FlowerPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF79B602023039E00CF2E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF79B622023039E00CF2E08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		4FF79B672023039E00CF2E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FF79B6A2023039E00CF2E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FF79B6C2023039E00CF2E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38756A53FCD7997628F3B43 /* Pods-FlowerPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerPower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerPower/Pods-FlowerPower.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D6E9C60BCEBC09AB01C750 /* Pods_FlowerPower.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009EE57E4160741745158DCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A798D293FBC408641CFA89A /* Pods_FlowerPower.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4FF79B542023039E00CF2E08 = {
 			isa = PBXGroup;
 			children = (
 				4FF79B5F2023039E00CF2E08 /* FlowerPower */,
 				4FF79B5E2023039E00CF2E08 /* Products */,
+				C3A54BD78F6DD4EA23351A9C /* Pods */,
+				009EE57E4160741745158DCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = FlowerPower;
 			sourceTree = "<group>";
 		};
+		C3A54BD78F6DD4EA23351A9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E38756A53FCD7997628F3B43 /* Pods-FlowerPower.debug.xcconfig */,
+				3B15408F8A240C88AED763D5 /* Pods-FlowerPower.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FF79B6F2023039E00CF2E08 /* Build configuration list for PBXNativeTarget "FlowerPower" */;
 			buildPhases = (
+				9A2A25C5B9EF7ED673B26662 /* [CP] Check Pods Manifest.lock */,
 				4FF79B592023039E00CF2E08 /* Sources */,
 				4FF79B5A2023039E00CF2E08 /* Frameworks */,
 				4FF79B5B2023039E00CF2E08 /* Resources */,
+				FFA435561F21DAF4A5ABB08F /* [CP] Embed Pods Frameworks */,
+				A5903895F439BF13BDBC8863 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A2A25C5B9EF7ED673B26662 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerPower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5903895F439BF13BDBC8863 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerPower/Pods-FlowerPower-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA435561F21DAF4A5ABB08F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlowerPower/Pods-FlowerPower-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerPower/Pods-FlowerPower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FF79B592023039E00CF2E08 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		4FF79B702023039E00CF2E08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38756A53FCD7997628F3B43 /* Pods-FlowerPower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +368,7 @@
 		};
 		4FF79B712023039E00CF2E08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B15408F8A240C88AED763D5 /* Pods-FlowerPower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
